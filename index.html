@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alivera | Nexo Creativo - Diseño Estratégicamente Accesible</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicon.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="#inicio">
+                <img src="assets/LogoH.png" alt="Alivera Creative Designs" class="nav-logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio">
+
+        <section id="quienes-somos" class="standard-section bg-dark">
+            <div class="container grid-two">
+                <div class="text-side">
+                    <h2>¿Quiénes Somos?</h2>
+                    <p class="highlight-text">Alivera es el espacio donde la visión de <strong>Ashby Olvera</strong>
+                        demuestra que el diseño de alto impacto no tiene por qué ser inalcanzable.</p>
+                    <p>Acompañamos a emprendedores y pequeños negocios en la transformación de sus ideas en herramientas
+                        visuales potentes. Creemos en una ecuación justa: <span class="gold-highlight">calidad técnica
+                            de agencia</span> con la calidez y accesibilidad de una marca personal.</p>
+                </div>
+                <div class="image-side">
+                    <img src="assets/LogoUpscale.png" alt="Equipo Creativo Alivera">
+                </div>
+            </div>
+        </section>
+
+        <section id="mision" class="standard-section bg-darker">
+            <div class="container grid-two reverse">
+                <div class="image-side">
+                    <img src="assets/Aniv.png" alt="Misión Alivera">
+                </div>
+                <div class="text-side">
+                    <h2>Misión</h2>
+                    <p>Empoderar a cada marca para que cuente su historia con orgullo y profesionalismo. Actuamos como
+                        el soporte estratégico que los emprendedores necesitan, entregando trabajos de rigurosa calidad
+                        técnica que son financieramente accesibles.</p>
+                    <p>Nos aseguramos de que ningún gran proyecto se quede atrás por falta de una imagen potente y una
+                        estrategia visual clara.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="standard-section bg-dark">
+            <div class="container grid-two">
+                <div class="text-side">
+                    <h2>Visión</h2>
+                    <p>Como visión para el proyecto seria la expansion a un equipo de diversos diseñadores con
+                        experticia en distintas áreas asi como la creación de departamentos especializados para cada
+                        sub-áreas del diseño.
+
+                        Expansion al mercado nacional e internacional al añadir estos equipos para distintos tamaños de
+                        proyectos. Esto acompañado del apoyo de diseñadores emergentes y experimentados para la
+                        estructuración de estos equipos.</p>
+                </div>
+                <div class="image-side">
+                    <img src="assets/Principal.jpg" alt="Visión Alivera">
+                </div>
+            </div>
+        </section>
+
+        <section id="portafolio" class="content-section">
+            <div class="tabs-header">
+                <div class="container">
+                    <h2 class="center section-title" style="color: white; margin-bottom: 20px;">Portafolio de Servicios
+                    </h2>
+                    <div class="tabs-menu">
+                        <button class="tab-btn active" onclick="openTab(event, 'animacion')">Animación (Motion y
+                            3D)</button>
+                        <button class="tab-btn" onclick="openTab(event, 'video')">Edición de Video</button>
+                        <button class="tab-btn" onclick="openTab(event, 'composicion')">Composición Digital</button>
+                        <button class="tab-btn" onclick="openTab(event, 'arte')">Arte Digital</button>
+                        <button class="tab-btn" onclick="openTab(event, 'programacion')">Programación</button>
+                        <button class="tab-btn" onclick="openTab(event, 'branding')">Branding</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container tab-container">
+
+                <div id="animacion" class="tab-content active">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card" onclick="openMedia('video', 'assets/LDR.mov')">
+                            <div class="card-visual">
+                                <img src="assets/LogoUpscale.png" alt="Animación 3D">
+                                <div class="overlay-fullscreen">Ver Video Fullscreen</div>
+                                <span class="tag promo">Destacado</span>
+                            </div>
+                            <div class="card-details">
+                                <h3>Animación 3D Bodymechanics</h3>
+                                <p>Bloqueo de poses y timing para secuencias narrativas. Ideal para cinemáticas
+                                    complejas para su uso en cortometrajes o videojuegos.</p>
+                                <div class="price-block"><span class="price">Desde $2,500 MXN</span></div>
+                                <ul class="specs">
+                                    <li>Renderizado en alta calidad</li>
+                                    <li>2 Rondas de corrección de timing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-card"
+                            onclick="openMedia('image', 'assets/CHATARRAEDICIONCOLECCIONISTA.jpg')">
+                            <div class="card-visual">
+                                <img src="assets/CHATARRAEDICIONCOLECCIONISTA.jpg" alt="Modelado">
+                                <div class="overlay-fullscreen">Ver Imagen Fullscreen</div>
+                            </div>
+                            <div class="card-details">
+                                <h3>Modelado 3D</h3>
+                                <p>Creación de mallas geométricas, retopología optimizada y texturizado para assets de
+                                    videojuegos o productos comerciales.</p>
+                                <div class="price-block"><span class="price">Desde $900 MXN</span></div>
+                                <ul class="specs">
+                                    <li>Modelos Low-Poly o High-Poly</li>
+                                    <li>Entregables en .OBJ o .FBX</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-card" onclick="openMedia('video', 'assets/bojji.mp4')">
+                            <div class="card-visual">
+                                <img src="assets/Boji.png" alt="Animación Vectorizada">
+                                <div class="overlay-fullscreen">Ver Imagen Fullscreen</div>
+                                <span class="tag promo">Promoción</span>
+                            </div>
+                            <div class="card-details">
+                                <h3>Animación Vectorizada</h3>
+                                <p>Animación de personajes a cuerpo completo así como
+                                    Motion graphics limpios y escalables para explicar procesos o dar vida a logotipos
+                                    corporativos.</p>
+                                <p>CC: Assets by Edson de Anda.</p>
+                                <div class="price-block"><span class="price">Desde $750 MXN</span><strike>$1,000
+                                        MXN</strike></div>
+                                <ul class="specs">
+                                    <li>Loop fluido</li>
+                                    <li>Formatos ligeros web</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="video" class="tab-content">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card" onclick="openMedia('youtube', 'pj9XOrNh5mQ')">
+                            <div class="card-visual">
+                                <img src="assets/Aniv.png" alt="Video Institucional 1">
+                                <div class="overlay-fullscreen">Ver Video Fullscreen</div>
+                            </div>
+                            <div class="card-details">
+                                <h3>Video Institucional 1</h3>
+                                <p>Montaje narrativo y corrección de color para eventos académicos, hackatones o
+                                    retrospectivas corporativas.</p>
+                                <div class="price-block"><span class="price">Desde $800 MXN</span></div>
+                                <ul class="specs">
+                                    <li>Edición dinámica multicámara</li>
+                                    <li>Diseño sonoro incluido</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-card" onclick="openMedia('youtube', 'FtCq7EmBoOA')">
+                            <div class="card-visual">
+                                <img src="assets/Revelacion_Logo.jpg" alt="Video Institucional 2">
+                                <div class="overlay-fullscreen">Ver Video Fullscreen</div>
+                            </div>
+                            <div class="card-details">
+                                <h3>Video Institucional 2</h3>
+                                <p>Pieza audiovisual de alto impacto centrada en el recorrido y la evolución de la
+                                    identidad de una marca.</p>
+                                <div class="price-block"><span class="price">Desde 800 MXN</span></div>
+                                <ul class="specs">
+                                    <li>Motion graphics integrados</li>
+                                    <li>Formatos para múltiples redes</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-card" onclick="openMedia('video', 'assets/Base.mp4')">
+                            <div class="card-visual">
+                                <img src="assets/Comercial.png" alt="Comercial">
+                                <div class="overlay-fullscreen">Ver Video Fullscreen</div>
+                                <span class="tag">Más Vendido</span>
+                            </div>
+                            <div class="card-details">
+                                <h3>Comercial</h3>
+                                <p>Edición rápida y atractiva diseñada específicamente para pautas publicitarias y
+                                    embudos de conversión.</p>
+                                <div class="price-block"><span class="price">Desde $800 MXN</span></div>
+                                <ul class="specs">
+                                    <li>Duración: 15 a 30 seg</li>
+                                    <li>Ganchos visuales (Hooks)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="composicion" class="tab-content">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card"
+                            onclick="openMedia('image', 'assets/Infografia-UY-Scuti-Corregida.png')">
+                            <div class="card-visual">
+                                <img src="assets/Infografia-UY-Scuti-Corregida.png" alt="Infografía">
+                                <div class="overlay-fullscreen">Ver Imagen Fullscreen</div>
+                            </div>
+                            <div class="card-details">
+                                <h3>Infografía</h3>
+                                <p>Estructuración de datos complejos en bloques escaneables con alta jerarquía visual.
+                                    Ideal para en redes sociales.</p>
+                                <div class="price-block"><span class="price">Desde $200 MXN</span></div>
+                                <ul class="specs">
+                                    <li>Diseño en vectores</li>
+                                    <li>Optimización de lectura</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="arte" class="tab-content">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card" onclick="openMedia('image', 'assets/Principal.jpg')">
+                            <div class="card-visual">
+                                <img src="assets/Principal.jpg" alt="Full ArtWork">
+                                <div class="overlay-fullscreen">Ver Imagen Fullscreen</div>
+                            </div>
+                            <div class="card-details">
+                                <h3>Full ArtWork</h3>
+                                <p>Comisión de arte conceptual completo con paisaje landscape detallado y personajes
+                                    integrados.</p>
+                                <div class="price-block"><span class="price">Desde $950 MXN</span></div>
+                                <ul class="specs">
+                                    <li>Alta resolución 4K</li>
+                                    <li>3 revisiones previas a la entrega final</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-card" onclick="openMedia('image', 'assets/AndrewFF.png')">
+                            <div class="card-visual">
+                                <img src="assets/AndrewFF.png" alt="Foto de Perfil">
+                                <div class="overlay-fullscreen">Ver Imagen Fullscreen</div>
+                                <span class="tag promo">Promoción</span>
+                            </div>
+                            <div class="card-details">
+                                <h3>Foto de Perfil</h3>
+                                <p>Ilustración de torso superior optimizada para avatares de redes sociales o perfiles
+                                    corporativos creativos.</p>
+                                <div class="price-block"><span class="price">Desde $350 MXN</span><strike>$500
+                                        MXN</strike></div>
+                                <ul class="specs">
+                                    <li>Archivos PNG transparentes</li>
+                                    <li>Formato cuadrado exacto</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-card" onclick="openMedia('image', 'assets/PlanBDamianoStigone.png')">
+                            <div class="card-visual">
+                                <img src="assets/PlanBDamianoStigone.png" alt="Dibujo Vectorizado">
+                                <div class="overlay-fullscreen">Ver Imagen Fullscreen</div>
+                            </div>
+                            <div class="card-details">
+                                <h3>Dibujo Vectorizado</h3>
+                                <p>Trazos limpios y escalables sin pérdida de calidad. Perfecto para impresiones en gran
+                                    formato o serigrafía.</p>
+                                <div class="price-block"><span class="price">Desde $450 MXN</span></div>
+                                <ul class="specs">
+                                    <li>Entregable en AI y SVG</li>
+                                    <li>Colores CMYK/RGB</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="programacion" class="tab-content">
+                    <div class="portfolio-grid">
+
+                        <div class="portfolio-card" onclick="openMedia('youtube', '-WeIgAFb4Hs')">
+                            <div class="card-visual">
+                                <img src="assets/RunawaySC.png" alt="Videojuego Web">
+                                <div class="overlay-fullscreen">Ver Captura Fullscreen</div>
+                            </div>
+                            <div class="card-details">
+                                <h3>Videojuego en Página Web</h3>
+                                <p>Desarrollo de un prototipo interactivo enfocado en mecánicas de reflejos y fluidez
+                                    visual, donde el usuario pilotea una nave a través de un túnel tridimensional
+                                    infinito generado de forma procedural.
+                                    <br><a href="https://ragedashby.github.io/Runaway/"
+                                        style="color:var(--magenta); text-decoration:underline;">Jugar Runaway</a>.
+                                </p>
+                                <div class="price-block"><span class="price">Cotización Personalizada</span></div>
+                                <ul class="specs">
+                                    <li>Integración de mecánicas a traves de JavaScript</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-card" onclick="openMedia('youtube', 'GFzpmfiTbus')">
+                            <div class="card-visual">
+                                <img src="assets/Logo.png" alt="App Android Kotlin">
+                                <div class="overlay-fullscreen">Ver Video Fullscreen</div>
+                            </div>
+                            <div class="card-details">
+                                <h3>Diseño App Kotlin Jetpack</h3>
+                                <p>Estructuración de interfaces Android nativas utilizando Scaffold, Top Bars y layouts
+                                    dinámicos para gestión de datos mediante apis externas.</p>
+                                <div class="price-block"><span class="price">Desde $4,500 MXN</span></div>
+                                <ul class="specs">
+                                    <li>Arquitectura Jetpack Compose</li>
+                                    <li>Módulos de inserción</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="branding" class="tab-content">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card" onclick="openMedia('pdf', 'assets/ManualDeMarca.pdf')">
+                            <div class="card-visual">
+                                <img src="assets/ManualDeMarca.jpg" alt="Branding">
+                                <div class="overlay-fullscreen">Ver Documento PDF</div>
+                            </div>
+                            <div class="card-details">
+                                <h3>Branding de Marca</h3>
+                                <p>Construcción de identidad desde cero: logotipos, paleta de colores, tipografías y
+                                    aplicaciones en mockups de alta gama.</p>
+                                <div class="price-block"><span class="price">Desde $2,800 MXN</span></div>
+                                <ul class="specs">
+                                    <li>Manual de Identidad incluido</li>
+                                    <li>Múltiples variaciones</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-card" onclick="openMedia('pdf', 'assets/RediseñoClubAstronomia.pdf')">
+                            <div class="card-visual">
+                                <img src="assets/RediseñoClubAstronomia.jpg" alt="Rediseño de Marca">
+                                <div class="overlay-fullscreen">Ver Documento PDF</div>
+                            </div>
+                            <div class="card-details">
+                                <h3>Rediseño de Marca</h3>
+                                <p>Auditoría visual y modernización de identidades obsoletas, respetando el ADN original
+                                    pero proyectando al futuro.</p>
+                                <div class="price-block"><span class="price">Desde $2,000 MXN</span></div>
+                                <ul class="specs">
+                                    <li>Adaptación para redes</li>
+                                    <li>Mejora de legibilidad</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="testimonios" class="standard-section bg-dark">
+            <div class="container">
+                <h2 class="center">Testimonios</h2>
+                <p class="center subtitle">La satisfacción de nuestros clientes es nuestra mejor carta de presentación.
+                </p>
+                <div class="testimonials-grid">
+                    <div class="t-card">
+                        <div class="t-header">
+                            <img src="assets/place1.jpg" alt="Laura Barraza" class="avatar">
+                            <div>
+                                <strong>Laura Barraza</strong>
+                                <span>Emprendedora</span>
+                            </div>
+                        </div>
+                        <p>"La atención fue excelente y el anuncio final quedó perfecto. Superó mis expectativas
+                            visuales."</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="t-card">
+                        <div class="t-header">
+                            <img src="assets/place2.png" alt="Jorge Quiroz" class="avatar">
+                            <div>
+                                <strong>Jorge Quiroz</strong>
+                                <span>Negocio Local</span>
+                            </div>
+                        </div>
+                        <p>"Gracias al equipo de Alivera, mi negocio ahora proyecta la imagen profesional que siempre
+                            quise."</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="t-card">
+                        <div class="t-header">
+                            <img src="assets/place3.webp" alt="Beatriz Granillo" class="avatar">
+                            <div>
+                                <strong>Beatriz Granillo</strong>
+                                <span>Artista</span>
+                            </div>
+                        </div>
+                        <p>"Los precios y la calidad fueron un match perfecto. Justo lo que mi proyecto personal
+                            necesitaba para crecer."</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proceso" class="standard-section bg-deep" style="padding-bottom: 150px;">
+            <div class="container">
+                <h2 class="center" style="margin-bottom: 40px;">Proceso de Trabajo</h2>
+                <div class="process-stack">
+                    <div class="process-card card-1">
+                        <h4>1. Contacto</h4>
+                        <p>Se inicia la comunicación por medio de Gmail o WhatsApp a través de los enlaces directos de
+                            la página web, donde se reciben las primeras ideas y necesidades del cliente para abrir el
+                            canal de atención personalizada.</p>
+                    </div>
+                    <div class="process-card card-2">
+                        <h4>2. Brief</h4>
+                        <p>Se realiza una sesión de diagnóstico para profundizar en los objetivos del proyecto, definir
+                            la dirección artística, establecer el rigor técnico y estructurar la cotización estratégica
+                            que guiará todo el proceso creativo.</p>
+                    </div>
+                    <div class="process-card card-3">
+                        <h4>3. Revisiones</h4>
+                        <p>Se presentan las propuestas conceptuales y se abre un espacio de retroalimentación donde el
+                            cliente cuenta con hasta 3 cambios gratuitos para pulir detalles y asegurar la total
+                            satisfacción antes del desarrollo definitivo.</p>
+                    </div>
+                    <div class="process-card card-4">
+                        <h4>4. Entrega</h4>
+                        <p>Se entrega el proyecto con todas las especificaciones acordadas y se deja la pauta para
+                            seguir colaborando con nuestro equipo creativo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" style="padding: 80px 0; background: var(--purple-dark);">
+            <div class="container">
+                <h2 class="center" style="margin-bottom: 40px;">Construyamos algo juntos</h2>
+                <div class="contact-grid">
+                    <div class="contact-box">
+                        <form class="contact-form" id="quote-form">
+                            <h3>Prepara tu cotización</h3>
+                            <label>Nombre o Empresa</label>
+                            <input type="text" id="form-name" placeholder="Ej: María García">
+
+                            <label>Marca / Proyecto</label>
+                            <input type="text" id="form-project" placeholder="¿Cómo se llama tu proyecto?">
+
+                            <label>Describe tu idea</label>
+                            <textarea id="form-idea"
+                                placeholder="Cuéntanos tu visión, necesidades y objetivos..."></textarea>
+
+                            <label>Email de contacto</label>
+                            <input type="email" id="form-email" placeholder="tu@correo.com">
+                        </form>
+                    </div>
+
+                    <div class="social-btns">
+                        <p class="cta-text" style="color: var(--white);">Envía tus datos vía:</p>
+                        <a href="https://wa.me/526564754232" id="btn-wa" class="btn-teal" target="_blank">
+                            <span>WhatsApp Directo</span> <span class="arrow">→</span>
+                        </a>
+                        <a href="mailto:aliveradesigns@gmail.com" id="btn-mail" class="btn-teal">
+                            <span>Email </span> <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid-vertical">
+            <div class="footer-brand">
+                <img src="assets/LogoH.png" alt="Alivera Logo" class="footer-logo">
+                <p>Nexo entre la técnica y el arte.</p>
+            </div>
+            <div class="footer-nav-vertical">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#proceso">Proceso</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-vertical">
+                <h4>Redes Sociales</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61586393766010" target="_blank">Facebook</a>
+                    </li>
+                    <li><a href="https://www.instagram.com/alivera.creative/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-legal-vertical">
+                <h4>Legal</h4>
+                <ul>
+                    <li><button onclick="togglePrivacy()" class="btn-privacy">Aviso de Privacidad</button></li>
+                    <li><button onclick="toggleCookiesModal()" class="btn-privacy">Política de Cookies</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2026 Alivera Creative Designs. Cd. Juárez, México.</p>
+        </div>
+    </footer>
+
+    <div id="media-modal" class="modal-overlay">
+        <button onclick="closeMedia()" class="close-media-btn">&times;</button>
+        <div id="media-container" class="media-content"></div>
+    </div>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>Utilizamos cookies para garantizar que tu experiencia en nuestro nexo creativo sea impecable.
+                Al continuar, aceptas nuestra <button onclick="toggleCookiesModal()" class="link-inline">Política de
+                    Cookies</button> y <button onclick="togglePrivacy()" class="link-inline">Aviso de
+                    Privacidad</button>.</p>
+            <button onclick="acceptCookies()" class="btn-cookie-accept">Entendido</button>
+        </div>
+    </div>
+
+    <div id="privacy-modal" class="modal-overlay glass-modal">
+        <div class="modal-body">
+            <button onclick="togglePrivacy()" class="close-modal">&times;</button>
+            <h2 id="modal-title">Aviso de Privacidad Integral</h2>
+            <div class="modal-text" id="modal-text-content">
+                <p><strong>Responsable:</strong> Alivera Creative Designs (Ashby Olvera).</p>
+                <p><strong>Finalidad:</strong> Los datos recabados se utilizarán exclusivamente para la monitorización mediante Google Analytics.</p>
+                <p><strong>Aclaraciones:</strong> Puedes obtener más informacion sobre la página enviando un correo a
+                    aliveradesigns@gmail.com.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
