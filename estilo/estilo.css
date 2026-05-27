@@ -183,7 +183,65 @@ strike { color: #888; margin-left: 10px; font-size: 1rem; }
 .link-inline { background: none; border: none; color: var(--gold); text-decoration: underline; cursor: pointer; font-family: inherit;}
 .glass-modal .modal-body { background: rgba(26, 26, 26, 0.95); backdrop-filter: blur(15px); border: 1px solid var(--gold); padding: 40px; max-width: 600px; border-radius: 15px; position: relative; color: var(--white); }
 .close-modal { position: absolute; top: 15px; right: 20px; font-size: 2rem; color: var(--gold); background: none; border: none; cursor: pointer; }
+/* === Banner de Método de Pago === */
+.payment-banner {
+    padding: 40px 0;
+    background-color: var(--bg-darker);
+}
 
+.payment-box {
+    background: var(--purple-dark);
+    border: 1px solid rgba(220, 174, 90, 0.4); /* Borde dorado sutil */
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 650px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: border-color 0.3s ease;
+}
+
+.payment-box:hover {
+    border-color: var(--gold); /* Brilla al pasar el mouse */
+}
+
+.payment-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.payment-box svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--gold);
+}
+
+.payment-box p {
+    color: #E0E0E0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.payment-box .small-text {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+}
+
+/* Ajuste responsivo para celulares */
+@media (max-width: 768px) {
+    .payment-box {
+        padding: 20px;
+    }
+    .payment-box h3 {
+        font-size: 1.2rem;
+    }
+}
 /* === MEDIA QUERIES === */
 @media (max-width: 768px) {
     .navbar { flex-direction: column; height: auto; padding: 15px; }
